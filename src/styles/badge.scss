@@ -1,0 +1,36 @@
+.badge {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 0 0.4em;
+  color: #fff;
+  text-align: center;
+  background-color: #6a737d;
+  border-radius: 3px;
+  display: inline-block;
+
+  &.badge-big {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  &.badge-multi {
+    margin: 0.1em;
+  }
+
+  &.badge-success {
+    background-color: #4caf50;
+  }
+
+  &.badge-info {
+    background-color: #00bcd4;
+  }
+
+  &.badge-error {
+    background-color: #f44336;
+  }
+
+  &.badge-btn {
+    cursor: pointer;
+  }
+}
