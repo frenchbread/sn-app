@@ -5,6 +5,10 @@
     <blockquote>
       Укажите ID пользователя телеграм для кадого социального сервиса, чтобы получать уведомления.
       Формат ID должен быть номером (например: 123123).
+      <br />
+      <br />
+      Для того, чтобы узнать ID вашего аккаунта, напишите что-нибудь
+      <a target="_blank" href="https://telegram.me/get_userId_by_username_bot">этому боту</a>.
     </blockquote>
     <form class="form" @submit.prevent="submit()">
 
