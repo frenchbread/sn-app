@@ -4,5 +4,5 @@ var config = require('./config')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  API_HOST: `"${config.dev_host}"`
+  API_HOST: `"${config.api_dev_host}"`
 })
