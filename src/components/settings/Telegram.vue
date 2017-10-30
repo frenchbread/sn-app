@@ -3,17 +3,8 @@
     <h1>Telegram</h1>
 
     <blockquote>
-      Add telegram IDs or usernames where to send notification for each social service.
-      <br />
-      <h3>Format:</h3>
-      <ul>
-        <li>
-          Telegram user ID (number, for example: 123123)
-        </li>
-        <li>
-          Telegram user username (string, for example: @user)
-        </li>
-      </ul>
+      Укажите ID пользователя телеграм для кадого социального сервиса, чтобы получать уведомления.
+      Формат ID должен быть номером (например: 123123).
     </blockquote>
     <form class="form" @submit.prevent="submit()">
 
