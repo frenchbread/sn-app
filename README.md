@@ -10,6 +10,8 @@
 
 ## Setup
 
+> **NOTE:** SN-App requires [sn-server](https://github.com/frenchbread/sn-server) up and running.
+
 1. Add `config/config.js` file that looks like this:
 
   ```js
