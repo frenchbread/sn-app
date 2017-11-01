@@ -1,21 +1,52 @@
-# SN
+# Social Notifier
 
-> Social Notifier
+> A web app that notifies you when new item (tweet, post, photo, video) is posted on social media.
 
-## Build Setup
+### Social services supported:
+ - Instagram
+ - YouTube
+ - VK
+ - Twitter
+
+## Setup
+
+1. Add `config/config.js` file that looks like this:
+
+  ```js
+    module.exports = {
+      api_dev_host: 'http://127.0.0.1:8000',
+      api_prod_host: 'http://127.0.0.1:8000'
+    }
+  ```
+
+2. Install dependencies
+
+  ```bash
+  $ yarn install
+  ```
+
+## Development
+
+Serve with hot reload at `http://localhost:8080`
+
+```bash
+$ yarn run dev
+```
+
+## Build for production
+
+Build for production with minification
+
+```bash
+$ yarn run build
+```
+
+Build for production and view the bundle analyzer report
 
 ``` bash
-# install dependencies
-yarn install
-
-# serve with hot reload at localhost:8080
-yarn run dev
-
-# build for production with minification
-yarn run build
-
-# build for production and view the bundle analyzer report
 yarn run build --report
 ```
 
-> For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## LICENSE
+
+[MIT](https://github.com/frenchbread/sn-app/blob/master/LICENSE)
