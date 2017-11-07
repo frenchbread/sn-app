@@ -9,6 +9,14 @@
       <br />
       Для того, чтобы узнать ID вашего аккаунта, напишите что-нибудь
       <a target="_blank" href="https://telegram.me/get_userId_by_username_bot">этому боту</a>.
+      <div class="divider"></div>
+      Для того, чтобы начать получать уведомления, напишите этим ботам, с Telegram аккаунтов которые указаны ниже:
+      <ul>
+        <li><a target="_blank" href="https://telegram.me/socialnotifier_twitter_bot">SocialNotifier Twitter</a></li>
+        <li><a target="_blank" href="https://telegram.me/socialnotifier_instagram_bot">SocialNotifier Instagram</a></li>
+        <li><a target="_blank" href="https://telegram.me/socialnotifier_vk_bot">SocialNotifier VK</a></li>
+        <li><a target="_blank" href="https://telegram.me/socialnotifier_youtube_bot">SocialNotifier YouTube</a></li>
+      </ul>
     </blockquote>
     <form class="form" @submit.prevent="submit()">
 
