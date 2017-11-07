@@ -3,6 +3,7 @@
     <NavBar></NavBar>
     <div class="content">
       <Accounts></Accounts>
+      <Info></Info>
     </div>
   </div>
 </template>
@@ -10,9 +11,10 @@
 <script>
 import NavBar from './NavBar'
 import Accounts from './accounts/Accounts'
+import Info from './Info'
 
 export default {
-  components: { NavBar, Accounts }
+  components: { NavBar, Accounts, Info }
 }
 </script>
 
