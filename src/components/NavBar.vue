@@ -21,10 +21,10 @@ import Settings from './settings/Settings'
 export default {
   methods: {
     openAddAccountModal () {
-      ModalController.show('Add Account', AddAccount)
+      ModalController.show('Добавить аккаунт', AddAccount)
     },
     openSettingsModal () {
-      ModalController.show('Settings', Settings)
+      ModalController.show('Настройки', Settings)
     }
   }
 }

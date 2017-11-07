@@ -25,7 +25,7 @@ export default {
     api.checkStatus()
       .then(res => {
         this.status = res.status
-        notify.success('server:status:ok')
+        // notify.success('server:status:ok')
       })
       .catch(err => notify.error('server:status:err', err.message))
   }

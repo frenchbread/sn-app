@@ -4,11 +4,8 @@
 
       <div class="form-group">
         <select class="form-control" v-model="account.type">
-          <option value="">select account type</option>
-          <option value="twitter">twitter</option>
-          <option value="instagram">instagram</option>
-          <option value="vk">vk</option>
-          <option value="youtube">youtube</option>
+          <option value="">Выберите социальный сервис</option>
+          <option v-for="accountType in accountTypes" :value="accountType.name">{{ accountType.display }}</option>
         </select>
       </div>
 
@@ -55,7 +52,7 @@
       </blockquote>
 
       <div>
-        <button type="submit" class="btn btn-block btn-success">Add</button>
+        <button type="submit" class="btn btn-block btn-success">Добавить</button>
       </div>
     </form>
   </div>
@@ -77,7 +74,8 @@ export default {
         type: '',
         name: '',
         username: ''
-      }
+      },
+      accountTypes
     }
   },
   methods: {

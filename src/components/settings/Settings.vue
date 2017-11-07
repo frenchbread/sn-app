@@ -13,7 +13,7 @@
 
     <div class="gap"></div>
 
-    <button class="btn btn-block btn-warning" @click="logout()">Logout</button>
+    <button class="btn btn-block btn-warning" @click="logout()">Выйти из аккаунта</button>
 
   </div>
 </template>

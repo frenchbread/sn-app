@@ -4,7 +4,7 @@
 
       <div class="social-service" v-for="accountType in accountTypes">
 
-        <h2>{{ accountType.name }}</h2>
+        <h2>{{ accountType.display }}</h2>
 
         <div v-if="accounts[accountType.name] && accounts[accountType.name].length > 0">
           <Account
@@ -15,14 +15,14 @@
           </Account>
         </div>
         <div v-else>
-          <p>> No accounts added</p>
+          <p>> Аккаунты не добавлены</p>
         </div>
 
       </div>
 
     </div>
     <div v-else>
-      <h4>> No accounts added</h4>
+      <p>> Аккаунты не добавлены</p>
     </div>
   </div>
 </template>

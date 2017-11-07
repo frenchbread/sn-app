@@ -19,14 +19,14 @@
             v-if="modal.isConfirmation"
             @click="confirm()"
             class="btn btn-success btn-block">
-            <span v-if="loading">Loading..</span>
-            <span v-else>Ok</span>
+            <span v-if="loading">Загрузка..</span>
+            <span v-else>Подтвердить</span>
           </button>
 
           <!-- Dismiss modal btn -->
           <div class="gap"></div>
           <button class="btn btn-error btn-block btn-ghost" @click="close()">
-            Dismiss
+            Закрыть
           </button>
         </div>
       </div>
