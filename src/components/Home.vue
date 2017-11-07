@@ -7,11 +7,16 @@
     <span v-else>
       Please <router-link :to="{ name: 'login' }">login</router-link> to continue.
     </span>
+
+    <div class="gap-big"></div>
+
+    <Info></Info>
   </div>
 </template>
 
 <script>
 import store from '@/store'
+import Info from './Info'
 
 export default {
   name: 'home',
@@ -19,9 +24,15 @@ export default {
     userIsAuthenticated () {
       return store.getters.userIsAuthenticated
     }
-  }
+  },
+  components: { Info }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.content {
+  color: #fff;
+}
+
 </style>

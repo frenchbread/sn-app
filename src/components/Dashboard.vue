@@ -20,6 +20,10 @@ export default {
 
 <style lang="scss" scoped>
 
+body {
+  background-color: #383249;
+}
+
 .content {
   width: 60em;
   margin: 0 auto;

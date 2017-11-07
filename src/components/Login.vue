@@ -1,7 +1,7 @@
 <template lang="html">
  <div class="content grid">
-   <div class="cell -4of12"></div>
-    <div class="cell -4of12">
+   <div class="cell -3of12"></div>
+    <div class="cell -6of12">
 
       <div class="form-holder">
 
@@ -44,7 +44,7 @@
       </div>
 
     </div>
-    <div class="cell -4of12"></div>
+    <div class="cell -3of12"></div>
   </div>
 </template>
 
@@ -86,12 +86,13 @@ export default {
 <style lang="scss" scoped>
 
 .form-holder {
+  color: #fff;
 
   margin: 10em 0;
   text-align: center;
 
   .card {
-    border: 3px solid #eee;
+    border: 3px solid #ccc;
     padding: 1em;
     border-radius: 3px;
     background-color: #fff;

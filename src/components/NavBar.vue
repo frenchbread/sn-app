@@ -2,7 +2,6 @@
   <header>
     <div class="grid">
       <div class="cell -3of12">
-        <!-- <b class="menu-btn">SocialNotifier</b> -->
         <span class="logo">SocialNotifier</span>
       </div>
       <div class="cell -9of12 align-right">

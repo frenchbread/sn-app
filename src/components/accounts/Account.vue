@@ -25,7 +25,6 @@ export default {
 
 .account {
   border: 3px solid #ccc;
-  border-radius: 3px;
   padding: 1em;
   margin-bottom: 1em;
   background-color: #f7f7f7;
