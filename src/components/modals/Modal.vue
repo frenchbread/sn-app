@@ -19,8 +19,7 @@
             v-if="modal.isConfirmation"
             @click="confirm()"
             class="btn btn-success btn-block">
-            <span v-if="loading">Загрузка..</span>
-            <span v-else>Подтвердить</span>
+            Подтвердить
           </button>
 
           <!-- Dismiss modal btn -->
@@ -37,11 +36,6 @@
 <script>
 export default {
   props: ['modal', 'closeModal', 'closeModals', 'className'],
-  data () {
-    return {
-      loading: false
-    }
-  },
   methods: {
     close () {
       this.closeModal(this.modal.id)
@@ -50,12 +44,8 @@ export default {
       this.closeModals()
     },
     confirm () {
-      this.loading = true
       this.modal.confirm()
-        .then(() => {
-          this.loading = false
-          this.close()
-        })
+      this.close()
     }
   }
 }

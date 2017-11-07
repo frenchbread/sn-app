@@ -6,13 +6,16 @@
 </template>
 
 <script>
+import ModalController from '@/components/modals/ModalController'
 import store from '@/store'
 
 export default {
   props: ['account', 'url'],
   methods: {
     removeAccount () {
-      store.dispatch('removeAccount', this.account._id)
+      ModalController.confirmation('Вы уверены, что хотите удалить этот аккаунт?', () => {
+        store.dispatch('removeAccount', this.account._id)
+      })
     }
   }
 }
