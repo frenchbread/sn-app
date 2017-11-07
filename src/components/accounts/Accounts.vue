@@ -52,9 +52,6 @@ export default {
 <style lang="scss">
 
 .accounts {
-  width: 60em;
-  margin: 0 auto;
-
   .social-service {
     border: 3px solid #ccc;
     background-color: #fff;

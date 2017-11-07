@@ -17,4 +17,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.content {
+  width: 60em;
+  margin: 0 auto;
+}
+
 </style>
