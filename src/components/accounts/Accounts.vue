@@ -56,9 +56,9 @@ export default {
   margin: 0 auto;
 
   .social-service {
-    border: 1px solid #ccc;
-    background-color: #f7f7f7;
-    padding: 0 1em;
+    border: 3px solid #ccc;
+    background-color: #fff;
+    padding: 0.5em 1em;
     margin-bottom: 1em;
     border-radius: 3px;
   }

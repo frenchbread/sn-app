@@ -30,11 +30,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 header {
   padding: 1em;
-  border-bottom: 1px solid #ccc;
+  border: 3px solid darken(#DC5F58, 20%);
+  background-color: #DC5F58;
+  color: #fff;
 
   .logo {
     display: inline-block;
@@ -43,7 +45,14 @@ header {
   }
 
   .menu-btn {
+    color: #fff;
+    border: none;
     font-size: 1.3em;
+
+    &:hover {
+      background-color: transparent;
+      border-bottom: 1px solid #fff;
+    }
   }
 }
 

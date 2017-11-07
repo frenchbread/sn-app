@@ -24,10 +24,11 @@ export default {
 <style lang="scss">
 
 .account {
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
+  border-radius: 3px;
   padding: 1em;
   margin-bottom: 1em;
-  background-color: white;
+  background-color: #f7f7f7;
 
   .delete-acc {
     float: right;
