@@ -1,5 +1,7 @@
 <template lang="html">
   <div class="account">
+    <span v-if="account.needsManualCheck" class="indicator indicator-error"></span>
+    <span v-else class="indicator indicator-ok"></span>
     <b v-if="account.name">[{{ account.name }}]</b> {{ url }}<b>{{ account.username }}</b>
     <a class="delete-acc" @click="removeAccount()">удалить</a>
   </div>
@@ -31,6 +33,21 @@ export default {
 
   .delete-acc {
     float: right;
+  }
+
+  .indicator {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+
+    &.indicator-ok {
+      background-color: #37DB67;
+    }
+
+    &.indicator-error {
+      background-color: #F64744;
+    }
   }
 }
 
